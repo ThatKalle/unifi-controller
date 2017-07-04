@@ -41,4 +41,4 @@ sudo echo -e '#!/bin/bash\n# Get the certificate from LetsEncrypt\n/usr/local/bi
 # Make renew_lets_encrypt_cert.sh script executable
 sudo chmod +x /usr/local/bin/renew_lets_encrypt_cert.sh
 # Schedule Cron Job to run renew_lets_encrypt_cert.sh every Monday
-crontab -l | { cat; echo "1 1 * * 1 /usr/local/bin/renew_lets_encrypt_cert.sh"; } | crontab -
+sudo crontab -l | { cat; echo "1 1 * * 1 /usr/local/bin/renew_lets_encrypt_cert.sh"; } | crontab -

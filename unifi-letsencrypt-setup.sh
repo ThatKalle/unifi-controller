@@ -1,6 +1,8 @@
 # Prerequisites
 sudo mkdir /usr/local/bin
 sudo apt-get install wget openssl
+# Make sure sudo has a Crontab
+sudo crontab -e
 # REMEBER TO CHANGE;
 # UNIFI.CONTROLLER.NAME
 # -password pass:PASSWORD
@@ -41,4 +43,4 @@ sudo echo -e '#!/bin/bash\n# Get the certificate from LetsEncrypt\n/usr/local/bi
 # Make renew_lets_encrypt_cert.sh script executable
 sudo chmod +x /usr/local/bin/renew_lets_encrypt_cert.sh
 # Schedule Cron Job to run renew_lets_encrypt_cert.sh every Monday
-sudo crontab -l | { cat; echo "1 1 * * 1 /usr/local/bin/renew_lets_encrypt_cert.sh"; } | crontab -
+sudo crontab -l | { cat; echo "1 1 * * 1 /usr/local/bin/renew_lets_encrypt_cert.sh"; } | sudo crontab -

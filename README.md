@@ -20,5 +20,8 @@ Installation and configuration of automated Let's Encrypt using certbot and cron
 Cronjob task for automated Let's Encrypt
 
 ## Backup
+### unifi-b2-setup.sh
+Installation and configuration of automated off-site backups to Backblaze B2
+
 ### unifi_b2_backup.sh
 Cronjob task for automated Backups to Backblaze B2 - B2_UNIFI.CONTROLLER.NAME:BUCKETNAME

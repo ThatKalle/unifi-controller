@@ -27,7 +27,7 @@ n # New Config
 	B2_UNIFI.CONTROLLER.NAME # Select a Name
 	3 # 3 for Backblaze B2
 	123456abcdef # Provide Accound ID
-	123456abcdef123456abcdef123456abcdef123abc # Provdie Application Key
+	123456abcdef123456abcdef123456abcdef123abc # Provide Application Key
     # Blank Endpoint
 	y # Save
 	q

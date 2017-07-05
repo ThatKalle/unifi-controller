@@ -1,7 +1,7 @@
 # Complete script reference to installing UniFi Controller on Ubuntu 16.04.2
 #
 # The procedure sets up a UniFi Controller instance with default settings
-# Protected by fail2ban with automated backups to Backblacze B2
+# Protected by fail2ban, secured by Let's Encrypt, automated backups to Backblacze B2
 
 
 # Add Linux user "user" with password "PASSWORD"
@@ -11,10 +11,10 @@ adduser user
 adduser user sudo
 exit
 
-# ssh as user
+## ssh as user
 # Disable root login
 sudo nano /etc/ssh/sshd_config
-	PermitRootLogin no
+#	PermitRootLogin no
 sudo service ssh restart
  
 # Set TimeZone to Europe/Stockholm
@@ -22,7 +22,7 @@ sudo service ssh restart
 sudo timedatectl set-timezone Europe/Stockholm
  
 # Update apt-get source list and upgrade all packages.
-sudo apt-get update && sudo apt-get upgrade -y
+sudo apt-get update -y && sudo apt-get upgrade -y
 
 # Set up Automatic Security Updates
 sudo apt-get install unattended-upgrades -y
@@ -51,7 +51,7 @@ sudo echo 'deb http://www.ubnt.com/downloads/unifi/debian unifi5 ubiquiti' | sud
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv C0A52C50
  
 # Update source list to include the UniFi repo then install Ubiquiti UniFi.
-sudo apt-get update && sudo apt-get install unifi -y
+sudo apt-get update -y && sudo apt-get install unifi -y
  
 # Install Fail2Ban
 sudo apt-get install fail2ban -y

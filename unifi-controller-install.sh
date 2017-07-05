@@ -45,10 +45,10 @@ sudo ufw --force enable
  
 # Add Ubiquiti UniFi repo to system source list.
 # https://help.ubnt.com/hc/en-us/articles/220066768-UniFi-How-to-Install-Update-via-APT-on-Debian-or-Ubuntu
-sudo echo 'deb http://www.ubnt.com/downloads/unifi/debian unifi5 ubiquiti' | sudo tee -a /etc/apt/sources.list.d/100-ubnt.list
+sudo echo 'deb http://www.ubnt.com/downloads/unifi/debian stable ubiquiti' | sudo tee -a /etc/apt/sources.list.d/100-ubnt.list
  
 # Add Ubiquiti GPG Keys
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv C0A52C50
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 06E85760C0A52C50
  
 # Update source list to include the UniFi repo then install Ubiquiti UniFi.
 sudo apt-get update -y && sudo apt-get install unifi -y

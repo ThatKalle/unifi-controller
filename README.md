@@ -3,6 +3,14 @@ A collection of Scripts and command references to be used with UniFi Controller 
 
 ### unifi-controller-install.sh
 Complete installation of UniFi Controller on Ubuntu including Firewall, Fail2Ban, automated Let's Encrypt and Backups.
+```
+sudo service unifi status
+sudo service fail2ban status
+sudo service longview status
+sudo fail2ban-client status ubiquiti
+sudo fail2ban-client set ubiquiti unbanip XXX.XXX.XXX.XXX
+sudo fail2ban-client status sshd
+```
 
 ## Let's Encrypt
 ### unifi-letsencrypt-setup.sh

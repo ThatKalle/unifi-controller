@@ -25,3 +25,6 @@ Installation and configuration of automated off-site backups to Backblaze B2
 
 ### unifi_b2_backup.sh
 Cronjob task for automated Backups to Backblaze B2 - B2_UNIFI.CONTROLLER.NAME:BUCKETNAME
+
+### unifi_ftp_backup.sh
+Cronjob task for automated Backups to FTP server

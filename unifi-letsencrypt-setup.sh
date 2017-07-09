@@ -29,6 +29,9 @@ yes | ./certbot-auto
 # Convert cert to PKCS #12 format
 sudo openssl pkcs12 -export -inkey /etc/letsencrypt/live/UNIFI.CONTROLLER.NAME/privkey.pem -in /etc/letsencrypt/live/UNIFI.CONTROLLER.NAME/fullchain.pem -out /usr/local/bin/lecert.p12 -name ubnt -password pass:PASSWORD
  
+# Backup current keystore
+sudo cp /var/lib/unifi/keystore /var/lib/unifi/keystore.backup
+ 
 # Install certificate on UniFi Controller
 sudo keytool -importkeystore -deststorepass aircontrolenterprise -destkeypass aircontrolenterprise -destkeystore /var/lib/unifi/keystore -srckeystore /usr/local/bin/lecert.p12 -srcstoretype PKCS12 -srcstorepass PASSWORD -alias ubnt -noprompt
 # Cleanup

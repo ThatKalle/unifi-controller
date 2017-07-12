@@ -22,7 +22,7 @@ Cronjob task for automated Let's Encrypt
 
 ## Backup
 ### unifi-b2-setup.sh
-Installation and configuration of automated off-site backups to Backblaze B2
+Installation and configuration of automated off-site backups to Backblaze B2.
 https://kallelilja.com/2017/07/backup-unifi-controller-backblaze-b2/
 
 ### unifi_b2_backup.sh

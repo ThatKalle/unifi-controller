@@ -1,5 +1,5 @@
 ##
-# Place a .pfx version of your certificate un ./tmp -- /tmp/certificate.pfx
+# Place a .pfx version of your certificate in ./tmp -- /tmp/certificate.pfx
 # Password in this example: C3rtificate3xportP@ssword
 ##
 

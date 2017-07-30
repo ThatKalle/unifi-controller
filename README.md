@@ -12,13 +12,17 @@ sudo fail2ban-client set ubiquiti unbanip XXX.XXX.XXX.XXX
 sudo fail2ban-client status sshd
 ```
 
+### unifi-pfx-install.sh
+install an existing .pfx exported certificate for use by UniFi Controller running on Ubuntu.
+* Please read the [related post](https://kallelilja.com/2017/07/install-pfx-certificate-unifi-controller/) for more information.
+
 ## Let's Encrypt
 ### unifi-letsencrypt-setup.sh
 Installation and configuration of automated Let's Encrypt using certbot and cronjob.
 * Please read the [related post](https://kallelilja.com/2017/07/automated-lets-encrypt-unifi-controller/) for more information.
 
 ### renew_lets_encrypt_cert.sh
-Cronjob task for automated Let's Encrypt
+Cronjob task for automated Let's Encrypt.
 
 ## Backup
 ### unifi-b2-setup.sh
@@ -26,7 +30,7 @@ Installation and configuration of automated off-site backups to Backblaze B2.
 * Please read the [related post](https://kallelilja.com/2017/07/backup-unifi-controller-backblaze-b2/) for more information.
 
 ### unifi_b2_backup.sh
-Cronjob task for automated Backups to Backblaze B2 - B2_UNIFI.CONTROLLER.NAME:BUCKETNAME
+Cronjob task for automated Backups to Backblaze B2. - B2_UNIFI.CONTROLLER.NAME:BUCKETNAME
 
 ### unifi_ftp_backup.sh
-Cronjob task for automated Backups to FTP server
+Cronjob task for automated Backups to FTP server.
